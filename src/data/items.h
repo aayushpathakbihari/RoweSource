@@ -18,7 +18,7 @@ const struct Item gItems[] =
     {
         .name = _("Master Ball"),
         .itemId = ITEM_MASTER_BALL,
-        .price = 0,
+        .price = 1,
         .description = sMasterBallDesc,
         .pocket = POCKET_POKE_BALLS,
         .type = 1,
@@ -607,7 +607,7 @@ const struct Item gItems[] =
         .name = _("Full Restore"),
 #endif
         .itemId = ITEM_FULL_RESTORE,
-        .price = 3000,
+        .price = 1,
         .holdEffectParam = 255,
         .description = sFullRestoreDesc,
         .pocket = POCKET_MEDICINE,
@@ -719,7 +719,7 @@ const struct Item gItems[] =
         .name = _("Max Revive"),
 #endif
         .itemId = ITEM_MAX_REVIVE,
-        .price = 4000,
+        .price = 1,
         .description = sMaxReviveDesc,
         .pocket = POCKET_MEDICINE,
         .type = 1,
@@ -938,7 +938,7 @@ const struct Item gItems[] =
         .name = _("Max Elixir"),
 #endif
         .itemId = ITEM_MAX_ELIXIR,
-        .price = 4500,
+        .price = 1,
         .holdEffectParam = 255,
         .description = sMaxElixirDesc,
         .pocket = POCKET_MEDICINE,
@@ -1334,7 +1334,7 @@ const struct Item gItems[] =
         .name = _("Rare Candy"),
 #endif
         .itemId = ITEM_RARE_CANDY,
-        .price = 9800,
+        .price = 1,
         .description = sRareCandyDesc,
         .pocket = POCKET_POWER_UP,
         .type = 1,
