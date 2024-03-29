@@ -315,17 +315,6 @@ Common_EventScript_PkmnCenterJack_MoveReminder_CantTeachEgg:: @ 8201444
 //------------------------------------------------------------------------------
 //Egg Move Tutor
 //------------------------------------------------------------------------------
-Common_EventScript_PkmnCenterJack_EggMoveTutor_Price::
-	goto_if_unset FLAG_RECEIVED_BADGE_06 Common_EventScript_PkmnCenterJack_NoEnoughBadges
-	msgbox gText_PkmnCenterJack_Teach_Egg_Moves, MSGBOX_YESNO
-	compare VAR_RESULT, NO
-	goto_if_eq Common_EventScript_PkmnCenterJack_MoveReminder_ComeBackAnytime
-	checkmoney 3000, 0
-	compare VAR_RESULT, FALSE
-	goto_if_eq EverGrandeCity_PokemonLeague_1F_EventScript_Power_Candy_no_Money
-	goto Common_EventScript_PkmnCenterJack_EggMoveTutor_ChooseMon
-	end
-
 Common_EventScript_PkmnCenterJack_EggMoveTutor_ChooseMon:: @ 82013D6
 	msgbox Common_PkmnCenterJack_Text_TutorWhichMon, MSGBOX_DEFAULT
 	special ChooseMonForEggTutor
@@ -363,17 +352,6 @@ Common_EventScript_PkmnCenterJack_EggMoveTutor_CantTeachEgg:: @ 8201444
 //------------------------------------------------------------------------------
 //Tm Move Tutor
 //------------------------------------------------------------------------------
-Common_EventScript_PkmnCenterJack_TmMoveTutor_Price::
-	goto_if_unset FLAG_RECEIVED_BADGE_08 Common_EventScript_PkmnCenterJack_NoEnoughBadges
-	msgbox gText_PkmnCenterJack_Teach_TM_Moves, MSGBOX_YESNO
-	compare VAR_RESULT, NO
-	goto_if_eq Common_EventScript_PkmnCenterJack_MoveReminder_ComeBackAnytime
-	checkmoney 6000, 0
-	compare VAR_RESULT, FALSE
-	goto_if_eq EverGrandeCity_PokemonLeague_1F_EventScript_Power_Candy_no_Money
-	goto Common_EventScript_PkmnCenterJack_TmMoveTutor_ChooseMon
-	end
-
 Common_EventScript_PkmnCenterJack_TmMoveTutor_ChooseMon:: @ 82013D6
 	msgbox Common_PkmnCenterJack_Text_TutorWhichMon, MSGBOX_DEFAULT
 	special ChooseMonForTMTutor
@@ -411,17 +389,6 @@ Common_EventScript_PkmnCenterJack_TMMMoveTutor_CantTeachEgg:: @ 8201444
 //------------------------------------------------------------------------------
 //Move Tutor
 //------------------------------------------------------------------------------
-Common_EventScript_PkmnCenterJack_TutorMoveTutor_Price::
-	goto_if_unset FLAG_RECEIVED_BADGE_07 Common_EventScript_PkmnCenterJack_NoEnoughBadges
-	msgbox gText_PkmnCenterJack_Teach_Tutor_Moves, MSGBOX_YESNO
-	compare VAR_RESULT, NO
-	goto_if_eq Common_EventScript_PkmnCenterJack_MoveReminder_ComeBackAnytime
-	checkmoney 4500, 0
-	compare VAR_RESULT, FALSE
-	goto_if_eq EverGrandeCity_PokemonLeague_1F_EventScript_Power_Candy_no_Money
-	goto Common_EventScript_PkmnCenterJack_TutorMoveTutor_ChooseMon
-	end
-
 Common_EventScript_PkmnCenterJack_TutorMoveTutor_ChooseMon:: @ 82013D6
 	msgbox Common_PkmnCenterJack_Text_TutorWhichMon, MSGBOX_DEFAULT
 	special ChooseMonForNewMoveTutor
