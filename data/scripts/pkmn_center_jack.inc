@@ -335,7 +335,6 @@ Common_EventScript_PkmnCenterJack_MoveReminder_ChooseEggMove:: @ 820140C
 	waitstate
 	compare VAR_0x8004, 0
 	goto_if_eq Common_EventScript_PkmnCenterJack_EggMoveTutor_ChooseMon
-	removemoney 3000, 0
 	goto Common_EventScript_PkmnCenterJack_MoveReminder_ComeBackAnytime
 	end
 	
@@ -372,7 +371,6 @@ Common_EventScript_PkmnCenterJack_TmMoveTutor_ChooseTmMove:: @ 820140C
 	waitstate
 	compare VAR_0x8004, 0
 	goto_if_eq Common_EventScript_PkmnCenterJack_TmMoveTutor_ChooseMon
-	removemoney 6000, 0
 	goto Common_EventScript_PkmnCenterJack_MoveReminder_ComeBackAnytime
 	end
 	
@@ -409,7 +407,6 @@ Common_EventScript_PkmnCenterJack_MoveReminder_ChooseTutorMove:: @ 820140C
 	waitstate
 	compare VAR_0x8004, 0
 	goto_if_eq Common_EventScript_PkmnCenterJack_TutorMoveTutor_ChooseMon
-	removemoney 4500, 0
 	goto Common_EventScript_PkmnCenterJack_MoveReminder_ComeBackAnytime
 	end
 	
