@@ -23,9 +23,9 @@ RustboroCity_Mart_EventScript_Clerk2:: @ 8214F06
 	end
 
 RustboroCity_Mart_Pokemart_Basic: @ 8214F30
-	.2byte ITEM_REPEAT_BALL
-	.2byte ITEM_TIMER_BALL
-	.2byte ITEM_NET_BALL
+	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_MAX_REVIVE
+	.2byte ITEM_MAX_ELIXIR
 	.2byte ITEM_ORANGE_MAIL
 	.2byte ITEM_NONE
 	release
