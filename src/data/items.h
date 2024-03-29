@@ -1607,7 +1607,7 @@ const struct Item gItems[] =
         .name = _("Max Repel"),
 #endif
         .itemId = ITEM_MAX_REPEL,
-        .price = 700,
+        .price = 1,
         .holdEffectParam = 250,
         .description = sMaxRepelDesc,
         .pocket = POCKET_ITEMS,
